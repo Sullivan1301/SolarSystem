@@ -22,7 +22,7 @@
    }
 } 
 
-sizer{
+.sizer{
     align-items: center;
     display: flex;
     height: 100vh;
@@ -30,4 +30,57 @@ sizer{
     margin: 0 auto;
     max-width: 100%;
     width: 100vh;
+}
+
+.wrapper{
+    padding-bottom: 65%;
+    position: relative;
+    width:65%;
+}
+
+.solar-system{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.positioner{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%,0);
+}
+
+.orbit{
+    border: 1px solid #ffffff40;
+    border-radius: 50%;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-timing-function: linear;
+}
+
+.planet, .sun{
+    border-radius: 50%;
+    display: block;
+}
+
+.planet{
+    background-color: currentColor;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.sun{
+    background-color: var(--clr-sun);
+    height: 11.5%;
+    width: 11.5%;
+}
+
+.mercury{
+    height: 19.2%;
 }
