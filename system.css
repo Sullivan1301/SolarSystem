@@ -1,0 +1,33 @@
+:root{
+    /*Earth orbital Period*/
+    --earth-orbit: 25s;
+    --clr-bg: #051628;
+    --clr-sun: #f9e14b;
+    --clr-mercury: #736f66;
+    --clr-venus: #b66e6f;
+    --clr-earth: #22adc2;
+    --clr-mars: #d02746;
+    --clr-saturn: #d5b979;
+    --clr-uranus: #d6fcfd;
+    --clr-neptune: #00749a;
+}
+
+@keyframes orbit {
+   0%{
+    transform: translateY(-50%0) translateX(-50%) rotate(0deg);
+   } 
+
+   100%{
+    transform:  translateY(-50%0) translateX(-50%) rotate(360deg);
+   }
+} 
+
+sizer{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100vh;
+}
